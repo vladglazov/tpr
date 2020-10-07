@@ -413,41 +413,41 @@ int Pareto_initDefaultTableMalloc(Pareto_strValueTable* output)
 	int err = Pareto_intilizalTableMalloc(output, 10, 5, 32);
 	if (err != 0) return err;
 
-	memcpy(output->titles[0].first, "Вес -     ", output->titles[0].length);
-	memcpy(output->titles[1].first, "Рост -    ", output->titles[1].length);
-	memcpy(output->titles[2].first, "Болезни - ", output->titles[2].length);
-	memcpy(output->titles[3].first, "Зарплата +", output->titles[3].length);
-	memcpy(output->titles[4].first, "Языки +   ", output->titles[4].length);
+	memcpy(output->titles[0].first, "Цена -   ", output->titles[0].length);
+	memcpy(output->titles[1].first, "Площадь +", output->titles[1].length);
+	memcpy(output->titles[2].first, "УОД -    ", output->titles[2].length);
+	memcpy(output->titles[3].first, "СК +     ", output->titles[3].length);
+	memcpy(output->titles[4].first, "НБ +     ", output->titles[4].length);
 
 	output->flags[0] = 0;
-	output->flags[1] = 0;
+	output->flags[1] = 1;
 	output->flags[2] = 0;
 	output->flags[3] = 1;
 	output->flags[4] = 1;
 
-	memcpy(output->lines[0].name.first, "Алёна  ", output->lines[0].name.length);
-	memcpy(output->lines[1].name.first, "Елена  ", output->lines[1].name.length);
-	memcpy(output->lines[2].name.first, "Мой кот", output->lines[2].name.length);
-	memcpy(output->lines[3].name.first, "Пётр   ", output->lines[3].name.length);
-	memcpy(output->lines[4].name.first, "Ирина  ", output->lines[4].name.length);
-	memcpy(output->lines[5].name.first, "Мама   ", output->lines[5].name.length);
-	memcpy(output->lines[6].name.first, "Наташа ", output->lines[6].name.length);
-	memcpy(output->lines[7].name.first, "Галина ", output->lines[7].name.length);
-	memcpy(output->lines[8].name.first, "Ольга  ", output->lines[8].name.length);
-	memcpy(output->lines[9].name.first, "Зинаида", output->lines[9].name.length);
+	memcpy(output->lines[0].name.first, "ЦСКА            ", output->lines[0].name.length);
+	memcpy(output->lines[1].name.first, "Полежаевская    ", output->lines[1].name.length);
+	memcpy(output->lines[2].name.first, "Пр-т Вернадского", output->lines[2].name.length);
+	memcpy(output->lines[3].name.first, "Юго-Западная    ", output->lines[3].name.length);
+	memcpy(output->lines[4].name.first, "Арбатская       ", output->lines[4].name.length);
+	memcpy(output->lines[5].name.first, "Текстильщики    ", output->lines[5].name.length);
+	memcpy(output->lines[6].name.first, "Новокосино      ", output->lines[6].name.length);
+	memcpy(output->lines[7].name.first, "Рассказовка     ", output->lines[7].name.length);
+	memcpy(output->lines[8].name.first, "Нахимовский пр-т", output->lines[8].name.length);
+	memcpy(output->lines[9].name.first, "Академическая   ", output->lines[9].name.length);
 
 
 
-	memcpy(output->lines[0].columns, (double[]) { 120.0, 175.0, 3.0, 15000.0, 1.0 }, sizeof(double[5]));
-	memcpy(output->lines[1].columns, (double[]) { 70.0, 160.0, 2.0, 4000.0, 2.0 }, sizeof(double[5]));
-	memcpy(output->lines[2].columns, (double[]) { 4.0, 20.0, 1.0, -2500.0, 0.0 }, sizeof(double[5]));
-	memcpy(output->lines[3].columns, (double[]) { 85.0, 185.0, 1.0, 70000.0, 2.0 }, sizeof(double[5]));
-	memcpy(output->lines[4].columns, (double[]) { 75.0, 172.0, 2.0, 50000.0, 2.0 }, sizeof(double[5]));
-	memcpy(output->lines[5].columns, (double[]) { 85.0, 170.0, 4.0, 40000.0, 2.0 }, sizeof(double[5]));
-	memcpy(output->lines[6].columns, (double[]) { 60.0, 180.0, 2.0, 30000.0, 1.0 }, sizeof(double[5]));
-	memcpy(output->lines[7].columns, (double[]) { 75.0, 152.0, 1.0, 65000.0, 2.0 }, sizeof(double[5]));
-	memcpy(output->lines[8].columns, (double[]) { 80.0, 151.0, 3.0, 75000.0, 1.0 }, sizeof(double[5]));
-	memcpy(output->lines[9].columns, (double[]) { 74.0, 174.0, 2.0, 23000.0, 2.0 }, sizeof(double[5]));
+	memcpy(output->lines[0].columns, (double[]) { 63000.0, 56.0, 0.4, 5.0, 0.0 }, sizeof(double[5]));
+	memcpy(output->lines[1].columns, (double[]) { 30000.0, 50.0, 3.0, 4.0, 1.0 }, sizeof(double[5]));
+	memcpy(output->lines[2].columns, (double[]) { 42000.0, 44.0, 2.0, 3.0, 1.0 }, sizeof(double[5]));
+	memcpy(output->lines[3].columns, (double[]) { 37000.0, 38.0, 1.5, 3.0, 0.0 }, sizeof(double[5]));
+	memcpy(output->lines[4].columns, (double[]) { 90000.0, 33.0, 0.6, 5.0, 0.0 }, sizeof(double[5]));
+	memcpy(output->lines[5].columns, (double[]) { 30000.0, 35.0, 5.0, 1.0, 1.0 }, sizeof(double[5]));
+	memcpy(output->lines[6].columns, (double[]) { 36000.0, 45.0, 1.0, 4.0, 1.0 }, sizeof(double[5]));
+	memcpy(output->lines[7].columns, (double[]) { 32000.0, 36.0, 3.0, 3.0, 1.0 }, sizeof(double[5]));
+	memcpy(output->lines[8].columns, (double[]) { 44000.0, 54.0, 1.6, 5.0, 0.0 }, sizeof(double[5]));
+	memcpy(output->lines[9].columns, (double[]) { 45000.0, 43.0, 1.4, 4.0, 0.0 }, sizeof(double[5]));
 	return 0;
 }
 
