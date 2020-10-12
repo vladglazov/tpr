@@ -15,9 +15,9 @@ namespace Analitic_Hierarchy_Process
                 {1, N }, Второй критерий важнее первого. Балл: 9.
                 {9, 1 },
                  */
-                {1, N }, // Цена
-                {5, 1 }  // СК
-            //   В  З 
+                {1, 5 }, // Цена
+                {N, 1 }  // Площадь
+        
             };
             for (int i = 0; i < matrixA.GetLength(0); i++)
                 for (int j = 0; j < matrixA.GetLength(1); j++)
@@ -46,7 +46,7 @@ namespace Analitic_Hierarchy_Process
                 //   Ц  П  ПВ ЮЗ  Ар  Т  Н  Р  НП  Ак  
                 //   0  1  2  3  4  5  6  7  8  9  
                 },
-                new double[,] // СК
+                new double[,] // Площадь
                 {
                     {1, 2, 5, 7, 9, 8, 4, 8, 1, 5 }, // 0 ЦСКА
                     {N, 1, 2, 5, 7, 6, 2, 6, N, 3 }, // 1 Полеж
